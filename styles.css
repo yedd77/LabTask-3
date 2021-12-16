@@ -1,0 +1,255 @@
+*{
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  }
+  
+  body{
+  background-color: #EBB2B5;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  }
+  
+  .form1 {
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 610px;
+  padding: 20px;
+  width: 1000px;
+  margin: 40px;
+  }
+  
+  .title {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 10px;
+  }
+  
+  .subtitle {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  }
+  
+  .input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+  }
+
+  .input-container2 {
+    height: 130px;
+    position: relative;
+    width: 100%;
+    padding: auto;
+    }
+  
+  .ic1 {
+  margin-top: 40px;
+  }
+  
+  .ic2 {
+  margin-top: 30px;
+  }
+  
+  .input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+  }
+  
+  .cut {
+  background-color: #15172b;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+  }
+  
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+  }
+  
+  .placeholder {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+  }
+  
+  .input:focus ~ .placeholder {
+  color: #dc2f55;
+  }
+  
+  .submit:active {
+  background-color: #06b;
+  }
+  
+  option, label{
+  color: #EEEEEE;
+  border: 0;
+  }
+  
+  select{
+  background-color: #303245;
+  border: 0;
+  color: #EEEEEE;
+  }
+  
+  
+  .parent {
+  color: #dc2f55;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  }
+  
+  .gap{
+  margin-top: 10px;
+  }
+  
+  tr, td{
+  text-align:left;
+  padding-left: 0;
+  }
+
+  .section{
+    width: 100%;
+  }
+
+  .left{
+    padding-left: 20px;
+  }
+  .right{
+    padding-left: 100px;
+    width: 40%;
+    vertical-align: baseline;
+    padding-top: 90px;
+  }
+
+  table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 30px;
+  }
+  
+  input[type='radio']:after {
+  width: 9px;
+  height: 9px;
+  border-radius: 15px;
+  position: relative;
+  background-color: #DDD9DB;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #EBB2B5;
+  }
+  
+  input[type='radio']:checked:after {
+  width: 9px;
+  height: 9px;
+  border-radius: 15px;
+  position: relative;
+  background-color: #CF6B8D;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #EBB2B5;
+  }
+  
+  input[type='checkbox']:after {
+  width: 9px;
+  height: 9px;
+  position: relative;
+  background-color: #DDD9DB;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #EBB2B5;
+  }
+  
+  input[type='checkbox']:checked:after {
+  width: 9px;
+  height: 9px;
+  position: relative;
+  background-color: #CF6B8D;
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #EBB2B5;
+  }
+  
+  button{
+    position: absolute;
+    margin-top: 85px;
+  }
+  .btn {
+  background-color: #CA5B84;
+  border: 1px solid #CA5B84;
+  padding-left: 50%;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  left: 67%;
+  }
+  
+  .btn:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+  }
+  
+  @media (min-width: 768px) {
+  .button-37 {
+  padding: 10px 30px;
+  }
+  }
+  
+  .centerise{
+  margin-left: 45%;
+  }

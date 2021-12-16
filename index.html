@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Laboratory Task 3</title>
+    <script defer src="./script.js"></script>
+
+</head>
+
+<body>
+    <form action="Page1.html" name="form" onsubmit="return validateForm()" method="POST">
+
+
+        <div class="form1">
+
+            <table class="section">
+                <tbody>
+                    <tr>
+                        <td class="left">
+                            <!--Form Tittle-->
+                            <div class="title">Form</div>
+                            <div class="subtitle">Fill out the form below</div>
+
+                            <!--Username-->
+                            <div class="input-container ic1">
+                                <input id="Username" class="input" type="text" placeholder=" " />
+                                <div class="cut"></div>
+                                <label for="Username" class="placeholder">Username</label>
+                            </div>
+
+                            <!--Password-->
+                            <div class="input-container ic2">
+                                <input id="Password" class="input" type="password" placeholder=" " />
+                                <div class="cut"></div>
+                                <label for="Password" class="placeholder">Password</label>
+                            </div>
+
+                            <!--Matrix Num-->
+                            <div class="input-container ic2">
+                                <input id="Matrix" class="input" type="text" placeholder=" " />
+                                <div class="cut"></div>
+                                <label for="Matrix" class="placeholder">Matrix No</label>
+                            </div>
+
+                            <!--Address-->
+                            <div class="input-container2 ic2">
+                                <input id="Address" class="input" type="text" placeholder=" " />
+                                <div class="cut"></div>
+                                <label for="Address" class="placeholder">Address</label>
+                            </div>
+                        </td>
+                        <td class="right">
+                            <!--Department-->
+                            <table>
+                                <tr class="parent">
+                                    <td>Department:</td>
+                                    <td> &emsp;
+                                        <select id="dept">
+                                            <option value="">Select</option>
+                                            <option value="1">JPH</option>
+                                            <option value="2">JKA</option>
+                                            <option value="3">JTMK</option>
+                                            <option value="4">JPA</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <!--Marital Status-->
+                                <tr class="parent">
+                                    <td>Marital Status:</td>
+                                    <td>&emsp;
+                                        <input type="radio" id="rad1" name="Status" value="1">
+                                        <label for="Single">Single</label>
+                                        <br>&emsp;
+                                        <input type="radio" id="rad2" name="Status" value="2">
+                                        <label for="Married">Married</label>
+                                    </td>
+                                </tr>
+
+                                <!--Interest-->
+                                <tr class="parent">
+                                    <td>Interest:</td>
+                                    <td>
+                                        &emsp;
+                                        <input type="checkbox" name="read" id="inter" value="1">
+                                        <label for="read">Reading Book</label><br>
+                                        &emsp;
+                                        <input type="checkbox" name="sleep" id="inter" value="2">
+                                        <label for="sleep">Sleeping</label><br>
+                                        &emsp;
+                                        <input type="checkbox" name="Fish" id="inter" value="3">
+                                        <label for="Fish">Fishing</label><br>
+                                        &emsp;
+                                        <input type="checkbox" name="Sport" id="inter" value="4">
+                                        <label for="Sport">Sport</label>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="centerise">
+                                <button onclick="return validateForm()" type="submit" class="btn" value="submit">Submit</button>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+        </div>
+    </form>
+</body>
+
+</html>
